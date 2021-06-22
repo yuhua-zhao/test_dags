@@ -1,7 +1,7 @@
 import datetime
 import random
 from airflow import DAG
-from airflow.stats import State
+from airflow.utils.state import State
 from airflow.operators.bash_operator import BashOperator
 from airflow.operators.python import PythonOperator
 
