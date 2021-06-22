@@ -51,7 +51,8 @@ finished = BashOperator(
 
 pythoned = PythonOperator(
     task_id="pythoned",
-    dag=dag
+    dag=dag,
+    python_callable=dummyRun
 )
 
 
